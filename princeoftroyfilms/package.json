@@ -1,0 +1,54 @@
+// Show the current package.json
+console.log("Current package.json:")
+console.log({
+  "name": "root-pf",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+})
+
+console.log("\nLet's update it to a proper Next.js configuration.")
+console.log("\nUpdated package.json should be:")
+
+// Show the proper Next.js package.json configuration
+const properConfig = {
+  "name": "prince-of-troy-films",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^13.4.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^10.12.16",
+    "lucide-react": "^0.244.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.14",
+    "typescript": "^5.1.3"
+  }
+}
+
+console.log(JSON.stringify(properConfig, null, 2))
+
+console.log("\nTo update your package.json:")
+console.log("1. Copy the above configuration")
+console.log("2. Open package.json in your code editor")
+console.log("3. Replace the entire contents with the new configuration")
+console.log("4. Save the file")
+console.log("5. Run 'npm install' to install the dependencies")
+
+console.log("\nNote: Consider renaming your directory from 'root pf' to 'prince-of-troy-films'")
+console.log("This will help avoid issues with spaces in the directory name.")
